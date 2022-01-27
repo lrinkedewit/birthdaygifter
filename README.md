@@ -23,3 +23,7 @@ Chrome Extension for gifting your friends on their birthdays
 2. find how we can implement it
 3. add it to our 2. <div> tag (see popup.html)
 4. API Key = TEST_suzmNg_8Il9MhTaNGg6kTwOefGFKGQ8ztdG9g6-Q9-k
+
+
+// Add images
+1. download a few pngs and add them to the google chrome extension interface

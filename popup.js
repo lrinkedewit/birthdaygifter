@@ -11,19 +11,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }  
 
-    class Person {
-        constructor(name, date, email) {
-            this.name = name;
-            this.date = date;
-            this.email = email;
-            this.storage = {};
+    // class Person {
+    //     constructor(name, date, email) {
+    //         this.name = name;
+    //         this.date = date;
+    //         this.email = email;
         
-        }
-    }  
+    //     }
+    // }  
+
+
+
+    const allPeople = {};
     
     // DOM Elements
     // body
     const body = document.querySelector("body");
+    const submit = document.createElement('input');
+    submit.setAttribute("type", "submit")    
 
     // 1. div birthdayPerson
     const birthdayPerson = document.querySelector("#birthdayPerson");
@@ -34,16 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // 4. input birthdayDate
     const birthdayDate = document.querySelector("#birthdayDate");
 
-    const email = document.querySelector("email");
+    // const email = document.querySelector("email");
 
     // creating a new penguin
     const penguin = new Penguin(birthdayPerson);
 
     //we need to create input form for email address on html file
-    function populateBirthdays (birthdayName, birthdayDate, email) {
-        const person = new Person(birthdayName, birthdayDate, email);
-
-
+    function populateBirthdays (birthdayName, birthdayDate) {
+        allPeople[birthdayName] = birthdayDate;
     }
     document.addEventListener("submit", populateBirthdays())
 })
