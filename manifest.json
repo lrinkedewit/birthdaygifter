@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Penguin Pal",
+    "description": "Chrome Extension for gifting your friends on their birthdays",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "Penguin 16px.png",
+     "default_popup": "popup.html"
+    },
+    // Here we place API permissions in case we need them
+    "permissions": [
+     "activeTab"
+     ]
+  }
