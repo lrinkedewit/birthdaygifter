@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         constructor(el) {
             this.node = document.createElement("img");
             this.node.setAttribute("id", "penguin");
-            this.node.setAttribute("src", "src/access/Penguin-24px.png");
+            this.node.setAttribute("src", "src/access/New-Penguin.icns");
         
             el.appendChild(this.node);
         
