@@ -6,7 +6,7 @@
     "version": "1.0",
   
     "browser_action": {
-     "default_icon": "Penguin 16px.png",
+     "default_icon": "Penguin-24px.png",
      "default_popup": "popup.html"
     },
     // Here we place API permissions in case we need them

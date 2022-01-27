@@ -1,0 +1,28 @@
+#birthdayPerson {
+  background-color: aqua;
+  color: black;
+  height: auto;
+  width: 200px;
+}
+
+#giftCard {
+  background-color: blueviolet;
+  color: black;
+  height: auto;
+  width: 250px;
+}
+
+#birthdayName {
+  background-color: chartreuse;
+  color: black;
+  height: auto;
+  width: 230;
+}
+
+#birthdayDate {
+    background-color: chocolate;
+    color: black;
+    height: auto;
+    Width: 210;
+}
+

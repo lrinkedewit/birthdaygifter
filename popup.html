@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
 </head>
 <body>
-    <div>
+    <div id="birthdayPerson">
         <!-- if no birthday, use js to set display to none -->
-        <h1>Congratulations!</h1>
-        <!-- paragraph -->
+        <h1>There's a Birthday Penguin!</h1>
+        <!-- paragraph element to display birthday name-->
     </div>
+    <!-- giftCard will be linked to GiftRocket API-->
+    <div id="giftCard"></div>
+    <!-- JS functionality that lets a user add a name-->
+    <input id="birthdayName">
+    <!-- JS functionality that lets a user add the birthday date -->
+    <input type="date" id="birthdayDate">
 </body>
 </html>
