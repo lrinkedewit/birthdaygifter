@@ -4,9 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
         constructor(el) {
             this.node = document.createElement("img");
             this.node.setAttribute("id", "penguin");
-            this.node.setAttribute("src", "src/access/New-Penguin.icns");
+            this.node.setAttribute("src", "src/access/Penguin-16px.png");
         
             el.appendChild(this.node);
+        
+        }
+    }  
+
+    class Person {
+        constructor(name, date) {
+            this.name = name;
+            this.date = date;
+
         
         }
     }  
@@ -27,6 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // creating a new penguin
     const penguin = new Penguin(birthdayPerson);
 
+    function populateBirthdays (birthdayName, birthdayDate) {
+        const person = new Person(birthdayName, birthdayDate);
+        console.log(person);
 
-
+    }()
+    document.addEventListener("submit", populateBirthdays())
 })
