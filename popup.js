@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }  
 
     class Person {
-        constructor(name, date) {
+        constructor(name, date, email) {
             this.name = name;
             this.date = date;
-
+            this.email = email;
+            this.storage = {};
         
         }
     }  
@@ -33,13 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // 4. input birthdayDate
     const birthdayDate = document.querySelector("#birthdayDate");
 
+    const email = document.querySelector("email");
+
     // creating a new penguin
     const penguin = new Penguin(birthdayPerson);
 
-    function populateBirthdays (birthdayName, birthdayDate) {
-        const person = new Person(birthdayName, birthdayDate);
-        console.log(person);
+    //we need to create input form for email address on html file
+    function populateBirthdays (birthdayName, birthdayDate, email) {
+        const person = new Person(birthdayName, birthdayDate, email);
 
-    }()
+
+    }
     document.addEventListener("submit", populateBirthdays())
 })
